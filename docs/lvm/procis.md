@@ -2,7 +2,7 @@
 
 ## Instruction
 
-A processor instruction is a command to request starting a specific operation in LVM.
+A processor instruction is a command to request a specific operation from the LVM.
 Its fixed size is 16 bytes. It consists of the instruction metadata and an 64-bit immediate
 value. Below, you can see its bit form:
 
