@@ -1,4 +1,4 @@
-# Processor's Instruction Set
+# Processor's instruction set
 
 ## Instruction
 

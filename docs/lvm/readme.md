@@ -5,4 +5,5 @@ LVM is a virtual machine mimicking the physical hardware. Its processor uses a c
 
 # Documentation
 
-- [Processor Instruction Set](procis.md)
+- [Processor's instruction set](procis.md)
+- [Processor's registers](procreg.md)
