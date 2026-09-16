@@ -10,3 +10,10 @@ Lumen consists of a compiler collection and virtual machine.
 
 All these components are written and developed in Golang. The `docs/` folder provides a comprehensive treatment
 of LCC and LVM.
+
+# Goals
+
+- Provide a simple yet comprehensive and powerful enough environment to learn the operating system development
+  and experiment.
+
+- Provide a debugger to track the virtual machine's state, register values, interrupts etc.
