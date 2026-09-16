@@ -4,7 +4,7 @@ Processor's registers are divided into the following categories: **general-purpo
 
 ## Shared concepts
 
-- Registers, including both categories, can contain a 64-bit immediate values or memory addresses.
+- Registers, including both categories, can contain only a 64-bit immediate values or memory addresses.
 
 ## General-purpose registers
 
