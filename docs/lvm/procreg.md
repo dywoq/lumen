@@ -6,7 +6,7 @@ Processor's registers are divided into the following categories: **general-purpo
 
 - Registers, including both categories, can contain a 64-bit immediate values or memory addresses.
 
-## General-purpose Registers
+## General-purpose registers
 
 General-purpose registers are used by a guest program. It is permitted to use them in the user
 and kernel modes, therefore, the LVM's processor is forbidden from taking away this permission.
@@ -21,7 +21,7 @@ Following general-purpose registers exist:
 - `M1`, `M2`, `M3`, `M4`, `M5`, `M6`, `M7`, `M8`
 - `R1`, `R2`, `R3`, `R4`, `R5`, `R6`, `R7`, `R8`
 
-## Control Registers
+## Control registers
 
 Control registers are used by a guest program in the kernel. They are used to set interrupts, memory protection
 mechanisms and system call management up. Unlike general-purpose registers, a guest program running in user mode
