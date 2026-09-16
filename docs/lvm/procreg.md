@@ -14,7 +14,7 @@ and kernel modes, therefore, the LVM's processor is forbidden from taking away t
 General-purpose registers are divided into **usage groups** to separate concerns and responsibilities:
 
 - **M (Memory) Group**: These registers are used for containing memory addresses.
-- **R (Regular) Group**: These registers are used for containing regular immediate values.
+- **R (Regular) Group**: These registers are used for containing immediate values.
 
 Following general-purpose registers exist:
 
