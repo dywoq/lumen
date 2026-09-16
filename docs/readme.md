@@ -17,3 +17,8 @@ of LCC and LVM.
   and experiment.
 
 - Provide a debugger to track the virtual machine's state, register values, interrupts etc.
+
+# Documentation
+
+- [The LCC](./lcc/readme.md)
+- [The LVM](./lvm/readme.md)
