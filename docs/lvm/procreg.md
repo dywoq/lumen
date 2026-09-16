@@ -29,4 +29,32 @@ can be forbidden from using the control units if it is set explicitly. They have
 
 Following control registers exist:
 
-- `CMM` (Control Memory Management), `CSC` (Control System Call), `CIM` (Control Interrupt Management)
+- `CMM` (Memory Management), `CSC` (System Call), `CIM` (Interrupt Management)
+
+## Registers' identifier numbers
+
+As stated in the [Processor's instruction set](./procis.md) document, an instruction includes a
+destination register number, which is given a 8-bit region. All general-purpose and control units
+are provided with a unique identifier number. These identifiers are shown below.
+
+| **Register** | **Its identifier number (hexadecimal)** |
+| ------------ | --------------------------------------- |
+| `M1`         | `0x00`                                  |
+| `M2`         | `0x01`                                  |
+| `M3`         | `0x02`                                  |
+| `M4`         | `0x03`                                  |
+| `M5`         | `0x04`                                  |
+| `M6`         | `0x05`                                  |
+| `M7`         | `0x06`                                  |
+| `M8`         | `0x07`                                  |
+| `R1`         | `0x08`                                  |
+| `R2`         | `0x09`                                  |
+| `R3`         | `0x0A`                                  |
+| `R4`         | `0x0B`                                  |
+| `R5`         | `0x0C`                                  |
+| `R6`         | `0x0D`                                  |
+| `R7`         | `0x0E`                                  |
+| `R8`         | `0x0F`                                  |
+| `CMM`        | `0x10`                                  |
+| `CSC`        | `0x11`                                  |
+| `CIM`        | `0x12`                                  |
