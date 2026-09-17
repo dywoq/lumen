@@ -27,32 +27,29 @@ Its fixed size is 16 bytes. It consists of the instruction's metadata, destinati
 
 ### `storem`
 
-**Form**:
+**Pseudo-form**:
 
 ```
-storem reg, [memory address]
+storem Register, [MemoryAddress]
 ```
 
-**Description**: This instruction stores the provided memory address into a corresponding
-general-purpose register from the usage group M.
+**Description**: This instruction stores the provided memory address into the destination register (`Register`).
 
-**Error Cases**:
+**Invariants**:
 
-- If a wrong register is specified or it does not exist, the virtual machine generates a instruction-fault
-  interrupt.
+- The provided destination register must be general-purpose and from the usage group M.
 
 ### `storer`
 
-**Form**:
+**Pseudo-form**:
 
 ```
-storer reg, [immediate]
+storer Register, ImmediateValue
 ```
 
-**Description**: This instruction stores the provided 64-bit immediate value into a corresponding
-general-purpose register from the usage group R.
+**Description**: This instruction stores the provided immediate value into the destination register
+(`Register`).
 
-**Error Cases**:
+**Invariants**:
 
-- If a wrong register is specified or it does not exist, the virtual machine generates a instruction-fault
-  interrupt.
+- The provided destination register (`Register`) must be general-purpose and from the usage group R.
