@@ -22,3 +22,37 @@ Its fixed size is 16 bytes. It consists of the instruction's metadata, destinati
 | `storer` | Stores an immediate value into a general-purpose register              |
 | `loadm`  | Copies a memory address from source register to destination register.  |
 | `loadr`  | Copies an immediate value from source register to destination register |
+
+## Instructions
+
+### `storem`
+
+**Form**:
+
+```
+storem reg, [memory address]
+```
+
+**Description**: This instruction stores the provided memory address into a corresponding
+general-purpose register from the usage group M.
+
+**Error Cases**:
+
+- If a wrong register is specified or it does not exist, the virtual machine generates a instruction-fault
+  interrupt.
+
+### `storer`
+
+**Form**:
+
+```
+storer reg, [immediate]
+```
+
+**Description**: This instruction stores the provided 64-bit immediate value into a corresponding
+general-purpose register from the usage group R.
+
+**Error Cases**:
+
+- If a wrong register is specified or it does not exist, the virtual machine generates a instruction-fault
+  interrupt.
