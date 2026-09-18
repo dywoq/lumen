@@ -52,4 +52,34 @@ storer Register, ImmediateValue
 
 **Invariants**:
 
-- The provided destination register (`Register`) must be general-purpose and from the usage group R.
+- The provided destination register must be general-purpose and from the usage group R.
+
+### `loadm`
+
+**Pseudo-form**:
+
+```
+loadm DestinationRegister, SourceRegister
+```
+
+**Description**: This instruction copies a memory address of the source register (`SourceRegister`)
+into the destination register (`DestinationRegister`).
+
+**Invariants**:
+
+- The specified registers must be general-purpose and from the usage group M.
+
+### `loadr`
+
+**Pseudo-form**:
+
+```
+loadr DestinationRegister, SourceRegister
+```
+
+**Description**: This instruction copies a memory address of the source register (`SourceRegister`)
+into the destination register (`DestinationRegister`).
+
+**Invariants**:
+
+- The specified registers must be general-purpose and from the usage group R.
