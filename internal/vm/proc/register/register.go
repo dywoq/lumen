@@ -1,6 +1,8 @@
 // Copyright 2926 dywoq - Apache License 2.0
 // https://github.com/dywoq/lumen
 
+// Package register consists of the register type definitions. It meets the requirements
+// of the LVM documentation.
 package register
 
 // Kind identifies the type of a register.
