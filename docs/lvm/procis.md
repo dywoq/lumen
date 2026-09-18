@@ -1,5 +1,9 @@
 # Processor's instruction set
 
+## Overview
+
+The instruction set of the LVM's processor is 64-bit.
+
 ## Instruction
 
 A processor instruction is a command to request a specific operation from the LVM.
