@@ -20,8 +20,8 @@ Its fixed size is 16 bytes. It consists of the instruction's metadata, destinati
 | -------- | ---------------------------------------------------------------------- |
 | `storem` | Stores a memory address into a general-purpose register                |
 | `storer` | Stores an immediate value into a general-purpose register              |
-| `loadm`  | Copies a memory address from source register to destination register.  |
-| `loadr`  | Copies an immediate value from source register to destination register |
+| `copym`  | Copies a memory address from source register to destination register.  |
+| `copyr`  | Copies an immediate value from source register to destination register |
 
 ## Instructions
 
@@ -54,12 +54,12 @@ storer Register, ImmediateValue
 
 - The provided destination register must be general-purpose and from the usage group R.
 
-### `loadm`
+### `copym`
 
 **Pseudo-form**:
 
 ```
-loadm DestinationRegister, SourceRegister
+copym DestinationRegister, SourceRegister
 ```
 
 **Description**: This instruction copies a memory address of the source register (`SourceRegister`)
@@ -69,12 +69,12 @@ into the destination register (`DestinationRegister`).
 
 - The specified registers must be general-purpose and from the usage group M.
 
-### `loadr`
+### `copyr`
 
 **Pseudo-form**:
 
 ```
-loadr DestinationRegister, SourceRegister
+copyr DestinationRegister, SourceRegister
 ```
 
 **Description**: This instruction copies a memory address of the source register (`SourceRegister`)
