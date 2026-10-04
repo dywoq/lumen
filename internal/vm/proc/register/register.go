@@ -107,6 +107,10 @@ func (ct ControlType) IsValid() bool {
 	}
 }
 
+func (c Code) IsValid() bool {
+	return c >= CodeM1 && c <= CodeCIM
+}
+
 // NewGP constructs a [R] instance, where it includes the general-purpose register information
 // and [KindGeneralPurpose] kind.
 func NewGP(usageGroup GPUsageGroup) *R {
