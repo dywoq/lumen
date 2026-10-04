@@ -43,6 +43,8 @@ storem Register, [MemoryAddress]
 
 - The provided destination register must be general-purpose and from the usage group M.
 
+**Operation Code**: 0x00
+
 ### `storer`
 
 **Pseudo-form**:
@@ -57,6 +59,8 @@ storer Register, ImmediateValue
 **Invariants**:
 
 - The provided destination register must be general-purpose and from the usage group R.
+
+**Operation Code**: 0x01
 
 ### `copym`
 
@@ -73,6 +77,8 @@ into the destination register (`DestinationRegister`).
 
 - The specified registers must be general-purpose and from the usage group M.
 
+**Operation Code**: 0x02
+
 ### `copyr`
 
 **Pseudo-form**:
@@ -87,3 +93,5 @@ into the destination register (`DestinationRegister`).
 **Invariants**:
 
 - The specified registers must be general-purpose and from the usage group R.
+
+**Operation Code**: 0x03
