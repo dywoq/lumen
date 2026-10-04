@@ -1,4 +1,4 @@
-// Copyright 2926 dywoq - Apache License 2.0
+// Copyright 2026 dywoq - Apache License 2.0
 // https://github.com/dywoq/lumen
 
 // Package register consists of the register type definitions. It meets the requirements
