@@ -16,7 +16,7 @@ Its fixed size is 16 bytes. It consists of the instruction's metadata, destinati
 - `16...23` - The destination register's identifier number.
 - `24...31` - The source register's identifier number.
 - `32...63` - Reserved for future additions and changes.
-- `64...127` - The 64-bit immediate value.
+- `64...127` - The 64-bit value that is either a memory address or an immediate.
 
 ### Table
 
