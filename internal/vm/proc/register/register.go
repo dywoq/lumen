@@ -33,9 +33,13 @@ type ControlInfo struct {
 	Type ControlType
 }
 
+// Code identifies which register is used.
+type Code int
+
 // R contains the information of a register.
 type R struct {
 	Kind  Kind
+	Code  Code
 	Value uint64
 	// GPInfo must stay null if Kind is not [KindGeneralPurpose].
 	GPInfo *GPInfo
@@ -57,6 +61,28 @@ const (
 	ControlTypeMm ControlType = iota
 	ControlTypeSc
 	ControlTypeIm
+)
+
+const (
+	CodeM1 Code = iota
+	CodeM2
+	CodeM3
+	CodeM4
+	CodeM5
+	CodeM6
+	CodeM7
+	CodeM8
+	CodeR1
+	CodeR2
+	CodeR3
+	CodeR4
+	CodeR5
+	CodeR6
+	CodeR7
+	CodeR8
+	CodeCMM
+	CodeCSC
+	CodeCIM
 )
 
 func (k Kind) IsValid() bool {
@@ -81,8 +107,8 @@ func (ct ControlType) IsValid() bool {
 	}
 }
 
-// NewGP constructs a [R] instance, where it includes general-purpose register information,
-// and the [KindGeneralPurpose] kind.
+// NewGP constructs a [R] instance, where it includes the general-purpose register information
+// and [KindGeneralPurpose] kind.
 func NewGP(usageGroup GPUsageGroup) *R {
 	return &R{
 		Kind: KindGeneralPurpose,
@@ -92,8 +118,8 @@ func NewGP(usageGroup GPUsageGroup) *R {
 	}
 }
 
-// NewGP constructs a [R] instance, where it includes control register information,
-// and the [KindGeneralPurpose] kind.
+// NewGP constructs a [R] instance, where it includes the control register information
+// and [KindControl] kind.
 func NewControl(controlType ControlType) *R {
 	return &R{
 		Kind: KindControl,
